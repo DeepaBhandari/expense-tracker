@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 import TransactionForm from '../add-transaction'
+import TransactionChartSummary from '../chart'
 
 const Summary = ({
     onClose,
@@ -40,8 +41,7 @@ const Summary = ({
           mr={"2"}
         >
           <Heading size={"md"} mb={"4"} color={"gray.600"}>
-            Balance is 100
-            {/* Balance is $ {totalIncome - totalExpense} */}
+            Balance is $ {totalIncome - totalExpense}
           </Heading>
           <Flex
             justifyContent={"space-evenly"}
@@ -84,8 +84,7 @@ const Summary = ({
           justifyContent={"center"}
         >
           <Heading>
-            Chart
-            {/* <TransactionChartSummary expense={totalExpense} income={totalIncome} /> */}
+            <TransactionChartSummary expense={totalExpense} income={totalIncome} />
           </Heading>
         </Box>
       </Flex>
