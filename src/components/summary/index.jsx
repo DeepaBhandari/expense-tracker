@@ -1,7 +1,13 @@
 import React from 'react'
 import { Box, Flex, Heading, Text } from '@chakra-ui/react'
+import TransactionForm from '../add-transaction'
 
-const Summary = () => {
+const Summary = ({
+    onClose,
+    isOpen,
+    totalExpense,
+    totalIncome,
+  }) => {
   return (
     <Box
       p="6"
@@ -83,7 +89,7 @@ const Summary = () => {
           </Heading>
         </Box>
       </Flex>
-      {/* <TransactionForm onClose={onClose} isOpen={isOpen} /> */}
+      <TransactionForm onClose={onClose} isOpen={isOpen} />
     </Box>
 
   )
