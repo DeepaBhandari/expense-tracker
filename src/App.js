@@ -1,4 +1,4 @@
-import { Container } from '@chakra-ui/react';
+import { Container,Flex,Box } from '@chakra-ui/react';
 import './App.css';
 import Main from './components/main';
 
