@@ -1,14 +1,13 @@
-import React from 'react'
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
-import TransactionForm from '../add-transaction'
-import TransactionChartSummary from '../chart'
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import TransactionForm from "../add-transaction";
+import TransactionChartSummary from "../chart";
 
-const Summary = ({
-    onClose,
-    isOpen,
-    totalExpense,
-    totalIncome,
-  }) => {
+export default function Summary({
+  onClose,
+  isOpen,
+  totalExpense,
+  totalIncome,
+}) {
   return (
     <Box
       p="6"
@@ -53,7 +52,7 @@ const Summary = ({
             borderColor={"gray.100"}
           >
             <Flex flexDirection={"column"}>
-              <Heading color={"gray.700"}>$100</Heading>
+              <Heading color={"gray.700"}>$ {totalIncome}</Heading>
               <Text color={"gray.600"}>Total Income</Text>
             </Flex>
           </Flex>
@@ -67,7 +66,7 @@ const Summary = ({
             borderColor={"gray.100"}
           >
             <Flex flexDirection={"column"}>
-              <Heading color={"gray.700"}></Heading>
+              <Heading color={"gray.700"}>$ {totalExpense}</Heading>
               <Text color={"gray.600"}>Total Expense</Text>
             </Flex>
           </Flex>
@@ -90,8 +89,5 @@ const Summary = ({
       </Flex>
       <TransactionForm onClose={onClose} isOpen={isOpen} />
     </Box>
-
-  )
+  );
 }
-
-export default Summary
