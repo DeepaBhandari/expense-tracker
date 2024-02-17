@@ -34,6 +34,7 @@ const Summary = () => {
           mr={"2"}
         >
           <Heading size={"md"} mb={"4"} color={"gray.600"}>
+            Balance is 100
             {/* Balance is $ {totalIncome - totalExpense} */}
           </Heading>
           <Flex
@@ -46,7 +47,7 @@ const Summary = () => {
             borderColor={"gray.100"}
           >
             <Flex flexDirection={"column"}>
-              <Heading color={"gray.700"}></Heading>
+              <Heading color={"gray.700"}>$100</Heading>
               <Text color={"gray.600"}>Total Income</Text>
             </Flex>
           </Flex>
@@ -77,6 +78,7 @@ const Summary = () => {
           justifyContent={"center"}
         >
           <Heading>
+            Chart
             {/* <TransactionChartSummary expense={totalExpense} income={totalIncome} /> */}
           </Heading>
         </Box>
