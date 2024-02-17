@@ -41,8 +41,7 @@ const Summary = ({
           mr={"2"}
         >
           <Heading size={"md"} mb={"4"} color={"gray.600"}>
-            Balance is 100
-            {/* Balance is $ {totalIncome - totalExpense} */}
+            Balance is $ {totalIncome - totalExpense}
           </Heading>
           <Flex
             justifyContent={"space-evenly"}
