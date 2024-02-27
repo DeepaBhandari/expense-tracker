@@ -1,3 +1,7 @@
+### Expense App
+ - This app is used to calculate expense from your daily routine.
+ - It is made with react, chakra-UI  
+
 ### React App Installation
 
 ```npx create-react-app expense-tracker```
